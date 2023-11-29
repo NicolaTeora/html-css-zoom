@@ -5,10 +5,14 @@
     box-sizing: border-box;    
 }
 
+body{
+    overflow: hidden;
+}
+
 /* HEADER */
 
 .header_option{
-    padding: 20px 10px;
+    line-height: 60px;
     text-align: right;
     max-height: min-content;
 
@@ -21,12 +25,14 @@
     background-color: lightgray;
 }
 
+
 /* MAIN */
 
 .container{
-    height: 100vh;
+    height: calc(100vh - 60px - 70px);
     margin: 0 auto;
     padding: 10px 20px;
+    overflow: scroll;
 
     background-color: black;
 
@@ -37,11 +43,12 @@
 .container #room{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px 20px;
 }
 
 .user{
     width: min-content;
-    margin: 20px 10px;
 }
 
 .user_details{
@@ -59,4 +66,30 @@
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+/* FOOTER */
+
+.footer_option{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: lightgray;
+}
+
+.option_one{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.option_one span{
+    display: block;
+}
+
+.option_one .selection{
+    margin: 0 7px;
+    text-align: center;
 }
