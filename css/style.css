@@ -5,62 +5,58 @@
     box-sizing: border-box;    
 }
 
+/* HEADER */
 
-/* DEBUG */
+.header_option{
+    padding: 20px 10px;
+    text-align: right;
+    max-height: min-content;
 
-.debug{
-    min-height: 120px;
-    width: calc(100% / 6);
-    background-color: lightblue;
+    background-color: black;
 }
 
-.debug_detail{
-    color: whitesmoke;
+.header_element{
+    padding: 5px;
+    color: white;
     background-color: lightgray;
 }
 
-.debug_footer{
-    color: antiquewhite;
+/* MAIN */
+
+.container{
+    height: 100vh;
+    margin: 0 auto;
+    padding: 10px 20px;
+
+    background-color: black;
+
+    /* debug */
+    border: 1px dashed white;
 }
 
-/* CONTAINER */
-
-.conteiner{
-    height: calc(100vh - 100px);
-    padding: 0 25px;
-    margin: 0 auto;
-
+.container #room{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 .user{
-    margin: 5px 10px;
-    padding: 30px;
+    width: min-content;
+    margin: 20px 10px;
+}
+
+.user_details{
+    padding: 5px 2px;
+    width: max-content;
+    color: white;
+    background-color: lightgrey;
+}
+
+.container .user{
     position: relative;
 }
 
-.details_status{
-    padding: 0 15px;
+.user .user_details{
     position: absolute;
     bottom: 0;
     left: 0;
-}
-
-/* FOOTER */
-
-.option_room{
-    min-height: 100px;
-    padding: 0 10px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    position: sticky;
-    bottom: 0;
-    z-index: 1;
-
-    background-color: darkgrey;
 }
