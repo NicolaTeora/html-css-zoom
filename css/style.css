@@ -22,7 +22,8 @@ body{
 .header_element{
     padding: 5px;
     color: white;
-    background-color: lightgray;
+    border-radius: 5px;
+    background-color:  rgb(104, 103, 103);
 }
 
 
@@ -32,12 +33,12 @@ body{
     height: calc(100vh - 60px - 70px);
     margin: 0 auto;
     padding: 10px 20px;
-    overflow: scroll;
+    overflow: auto;
 
     background-color: black;
 
     /* debug */
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 .container #room{
@@ -76,7 +77,7 @@ body{
     align-items: center;
     justify-content: space-between;
 
-    background-color: rgb(104, 103, 103);
+    background-color: rgb(36, 35, 35);
 }
 
 .option_one{
@@ -88,6 +89,11 @@ body{
 
 .option_one span{
     display: block;
+}
+
+.option_one i{
+    align-self: center;
+    margin-left: 8px;
 }
 
 .option_one .selection{
