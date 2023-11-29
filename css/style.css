@@ -53,9 +53,10 @@ body{
 
 .user_details{
     padding: 5px 2px;
+    margin-bottom: 4px;
     width: max-content;
     color: white;
-    background-color: lightgrey;
+    background-color: rgba(197, 197, 197, 0.5)
 }
 
 .container .user{
@@ -71,15 +72,15 @@ body{
 /* FOOTER */
 
 .footer_option{
-    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    background-color: lightgray;
+    background-color: rgb(104, 103, 103);
 }
 
 .option_one{
+    padding: 10px;
     display: flex;
     justify-content: center;
     color: white;
@@ -92,4 +93,16 @@ body{
 .option_one .selection{
     margin: 0 7px;
     text-align: center;
+}
+
+.selection i{
+    font-size: xx-large;
+}
+
+#share{
+    color: greenyellow;
+}
+
+#end_meet{
+    color: red;
 }
